@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul>
+
+        <% title.forEach(element => {%>
+            <h1><%= element %></h1>
+        <%})%> 
+            <% message.forEach(element => { %>
+            <p><%= element %></p>
+            <%})%> 
+        
+        
+        <form action="/" method="post">
+            <input type="text" name="title">
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="post" autocomplete="off">
+        </form>
+    </ul>
 </body>
 </html>
